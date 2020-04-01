@@ -11,7 +11,14 @@ def flatten(d, key='', sep='_'):
         else:
             items.append((new_key, v))
     return dict(items)
-d1 = {}
-n = int(input())
-d1 = [ map(str,raw_input().split()) for x in range(n)]
-flatten(d1)
+
+flatten({
+        "key": 3,
+        "foo": {
+            "a": 5,
+            "bar": {
+                "baz": 8
+            }
+        }
+    }
+   )
