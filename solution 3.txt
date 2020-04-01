@@ -1,0 +1,10 @@
+solution 3
+
+l1 = eval(input())
+s = input()
+l2 = []
+for i in l1:
+	if s == i[0:len(s)]:
+		l2.append(i)
+print(l2)
+
